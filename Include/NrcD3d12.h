@@ -54,7 +54,7 @@ struct Buffers
  *  This should be done once at application startup, before any
  *  NRC Contexts are created
  */
-NRC_DECLSPEC Status Initialize(const GlobalSettings& config);
+NRC_DECLSPEC Status Initialize(const GlobalSettings& settings);
 
 /**
  *  Shutdown of the NRC library.

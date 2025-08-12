@@ -74,7 +74,7 @@ NRC_DECLSPEC uint32_t GetVulkanDeviceFeatures(char const* const*& outStringArray
  *  This should be done once at application startup, before any
  *  NRC Contexts are created
  */
-NRC_DECLSPEC Status Initialize(const nrc::GlobalSettings& config);
+NRC_DECLSPEC Status Initialize(const nrc::GlobalSettings& settings);
 
 /**
  *  Shutdown of the NRC library.

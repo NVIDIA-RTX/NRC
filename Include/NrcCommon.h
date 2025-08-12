@@ -19,8 +19,8 @@
 #endif
 
 #define NRC_VERSION_MAJOR 0
-#define NRC_VERSION_MINOR 13
-#define NRC_VERSION_DATE "22 January 2025"
+#define NRC_VERSION_MINOR 14
+#define NRC_VERSION_DATE "16 July 2025"
 
 namespace nrc
 {
@@ -85,12 +85,10 @@ typedef void* (*CustomAllocatorPtr)(const size_t bytes);
 typedef void (*CustomDeallocatorPtr)(void* pointer, const size_t bytes);
 
 /**
- *  Global configuration of NRC Library provided by application once at initialization
+ *  Global settings of NRC library provided by application _once_ at initialization
  */
 struct GlobalSettings
 {
-    // Please leave these as their default values. They are used to validate
-    // the version of the DLL matches the version of the headers.
     int majorVersion = NRC_VERSION_MAJOR;
     int minorVersion = NRC_VERSION_MINOR;
 
@@ -116,7 +114,7 @@ struct GlobalSettings
 
     // Optional setting for specifying a custom directory path where the CUDA
     // run-time dll dependencies are located
-    const char* depsDirectoryPath = nullptr;
+    const wchar_t* depsDirectoryPath = nullptr;
 };
 
 /**
