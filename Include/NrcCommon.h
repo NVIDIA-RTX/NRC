@@ -19,8 +19,8 @@
 #endif
 
 #define NRC_VERSION_MAJOR 0
-#define NRC_VERSION_MINOR 15
-#define NRC_VERSION_DATE "25 March 2026"
+#define NRC_VERSION_MINOR 16
+#define NRC_VERSION_DATE "1 October 2026"
 
 namespace nrc
 {
